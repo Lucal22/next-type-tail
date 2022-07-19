@@ -6,13 +6,11 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
-    'next',
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
     'plugin:tailwindcss/recommended',
-    'plugin:@next/next/recommended',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -25,7 +23,7 @@ module.exports = {
   plugins: ['tailwindcss', 'react', '@typescript-eslint'],
   settings: {
     react: {
-      version: 'detected',
+      version: 'detect',
     },
   },
   rules: {
